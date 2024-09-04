@@ -1,0 +1,7 @@
+<h2>Add Product</h2>
+<form (ngSubmit)="addProduct()">
+    <input type="text" [(ngModel)]="product.name" placeholder="Name" name="name" required>
+    <input type="number" [(ngModel)]="product.price" placeholder="Price" name="price" required>
+    <textarea [(ngModel)]="product.description" placeholder="Description" name="description"></textarea>
+    <button type="submit">Add Product</button>
+</form>
